@@ -11,8 +11,8 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            CodeBucks
-            <i className="fas fa-code"></i>
+           Currency Converter
+         
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -41,14 +41,15 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/blog"
+                to="/login"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Blog
+                Login
               </NavLink>
             </li>
+            
             <li className="nav-item">
               <NavLink
                 exact
@@ -60,6 +61,7 @@ function NavBar() {
                 Contact Us
               </NavLink>
             </li>
+            
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
